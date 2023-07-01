@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Unit Converter</title>
-</head>
-<body>
-  <h1>Hello</h1>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header start -->
+      <div class="header-section">
+        <button class="darklight-btn">Dark/Light-Mode</button>
+        <h1>Metric/Imperial Unit Conversion</h1>
+        <input class="input" />
+        <button class="convert-btn">Convert</button>
+      </div>
+      <!-- header end -->
 
-  <script src="script.js"></script>
-</body>
+      <!-- convert-section start -->
+      <div class="convert-section">
+        <div class="convert-length-section">
+          <h2 class="convert-header">Length (meter/feet)</h2>
+          <p class="converted-units" id="convert-length"></p>
+        </div>
+        <div class="convert-volume-section">
+          <h2 class="convert-header">Volume (liter/gallons)</h2>
+          <p class="converted-units" id="convert-volume"></p>
+        </div>
+        <div class="convert-mass-section">
+          <h2 class="convert-header">Mass (kilograms/pounds)</h2>
+          <p class="converted-units" id="convert-mass"></p>
+        </div>
+      </div>
+      <!-- convert-section end -->
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
