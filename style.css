@@ -15,12 +15,6 @@
   font: inherit;
 }
 
-/* dark mode user-agent-styles */
-
-html {
-  color-scheme: dark light;
-}
-
 /* min body height */
 
 body {
@@ -34,4 +28,19 @@ svg,
 video {
   display: block;
   max-width: 100%;
+}
+
+/* *** *** *** *** *** *** *** */
+
+:root {
+  --clr-primary: hsl(209, 100%, 31%);
+  --clr-accent-warm: hsl(47, 100%, 50%);
+  --clr-accent-cold: hsl(50, 100%, 50%);
+  --clr-light: hsl(100, 100%, 100%);
+  --clr-dark: hsl(0, 0%, 20%);
+}
+
+.container {
+  background: var(--clr-primary);
+  border: 1px solid red;
 }
